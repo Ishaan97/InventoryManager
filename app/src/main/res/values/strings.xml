@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">Inventory</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="reset">Reset</string>
+    <string name="update">Update</string>
+
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_itemlist_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/button_minus"
+        android:textSize="20sp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="8dp"
+        android:textStyle="normal|bold" />
+
+    <View
+        android:id="@+id/divider_item"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <ImageView
+        android:id="@+id/iv_menu_item"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="48dp"
+        android:layout_height="40dp"
+        android:layout_toStartOf="@id/iv_menu_item"
+        android:layout_toLeftOf="@id/iv_menu_item"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="+1" />
+
+    <TextView
+        android:id="@+id/tv_qty"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toStartOf="@id/button_add"
+        android:layout_toLeftOf="@id/button_add"
+        android:paddingTop="8dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/button_minus"
+        android:layout_width="48dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toStartOf="@id/tv_qty"
+        android:layout_toLeftOf="@id/tv_qty"
+        android:text="-1" />
+
+</RelativeLayout>
